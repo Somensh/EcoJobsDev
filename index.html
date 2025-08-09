@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoJobs - Sustainable Careers for a Better Future</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Skip Link for Screen Readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="logo" role="img" aria-label="EcoJobs Logo">
+            <span>🌱</span>
+            <span>EcoJobs</span>
+        </div>
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <a href="#home" aria-current="page">Home</a>
+            <a href="#jobs">Jobs</a>
+            <a href="#employers">Employers</a>
+            <a href="#about">About</a>
+            <button class="theme-toggle" aria-label="Toggle dark mode" role="switch" aria-checked="false">
+                🌙 Dark Mode
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home" role="banner">
+            <div class="globe-container" id="globe-container" aria-hidden="true"></div>
+            <div class="hero-content">
+                <h1>Sustainable Careers for a Greener Future</h1>
+                <p>Connect with eco-conscious companies and remote opportunities that make a difference</p>
+                <div class="cta-buttons">
+                    <a href="#jobs" class="btn btn-primary" role="button">
+                        <span>🔍</span>
+                        Find Jobs
+                    </a>
+                    <a href="#employers" class="btn btn-secondary" role="button">
+                        <span>🏢</span>
+                        For Employers
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Job Cards Carousel -->
+        <section class="job-carousel" id="job-carousel" aria-label="Featured job opportunities">
+            <h2 class="sr-only">Featured Jobs</h2>
+        </section>
+
+        <!-- Filters Section -->
+        <section class="filters-section" id="filters" aria-label="Job search filters">
+            <h2 style="text-align: center; font-size: 2.5rem; color: var(--primary-green); margin-bottom: 1rem;">
+                Find Your Perfect Green Job
+            </h2>
+            <p style="text-align: center; font-size: 1.2rem; opacity: 0.8; margin-bottom: 2rem;">
+                Use our advanced filters to discover opportunities that match your values and skills
+            </p>
+
+            <div class="filters-grid">
+                <div class="filter-group">
+                    <label for="industry" class="filter-label">Industry</label>
+                    <select id="industry" class="filter-input" aria-describedby="industry-help">
+                        <option value="">All Industries</option>
+                        <option value="renewable-energy">Renewable Energy</option>
+                        <option value="sustainable-tech">Sustainable Technology</option>
+                        <option value="green-building">Green Building</option>
+                        <option value="organic-agriculture">Organic Agriculture</option>
+                        <option value="environmental-services">Environmental Services</option>
+                    </select>
+                    <div id="industry-help" class="sr-only">Filter jobs by industry sector</div>
+                </div>
+
+                <div class="filter-group">
+                    <label for="location" class="filter-label">Location</label>
+                    <input type="text" id="location" class="filter-input" placeholder="City or Remote"
+                        aria-describedby="location-help">
+                    <div id="location-help" class="sr-only">Enter city name or select remote work</div>
+                </div>
+
+                <div class="filter-group">
+                    <label for="work-type" class="filter-label">Work Type</label>
+                    <select id="work-type" class="filter-input" aria-describedby="work-type-help">
+                        <option value="">All Types</option>
+                        <option value="remote">Remote</option>
+                        <option value="hybrid">Hybrid</option>
+                        <option value="on-site">On-site</option>
+                    </select>
+                    <div id="work-type-help" class="sr-only">Filter by remote, hybrid, or on-site work</div>
+                </div>
+
+                <div class="filter-group">
+                    <label for="certification" class="filter-label">Green Certification</label>
+                    <select id="certification" class="filter-input" aria-describedby="certification-help">
+                        <option value="">Any Certification</option>
+                        <option value="b-corp">B-Corp Certified</option>
+                        <option value="carbon-neutral">Carbon Neutral</option>
+                        <option value="leed">LEED Certified</option>
+                        <option value="fair-trade">Fair Trade</option>
+                    </select>
+                    <div id="certification-help" class="sr-only">Filter by company environmental certifications</div>
+                </div>
+
+                <div class="filter-group">
+                    <label for="salary-min" class="filter-label">Minimum Salary</label>
+                    <input type="number" id="salary-min" class="filter-input" placeholder="$0" min="0" step="1000"
+                        aria-describedby="salary-help">
+                    <div id="salary-help" class="sr-only">Enter minimum salary requirement</div>
+                </div>
+
+                <div class="filter-group">
+                    <label for="experience" class="filter-label">Experience Level</label>
+                    <select id="experience" class="filter-input" aria-describedby="experience-help">
+                        <option value="">All Levels</option>
+                        <option value="entry">Entry Level</option>
+                        <option value="mid">Mid Level</option>
+                        <option value="senior">Senior Level</option>
+                        <option value="executive">Executive</option>
+                    </select>
+                    <div id="experience-help" class="sr-only">Filter by required experience level</div>
+                </div>
+            </div>
+
+            <div class="map-container" role="img" aria-label="Interactive job locations map">
+                <div>🗺️ Interactive Map Coming Soon - Powered by Carbon-Neutral Hosting</div>
+            </div>
+        </section>
+
+        <!-- Job Listings -->
+        <section class="job-listings" id="jobs" aria-label="Job listings">
+            <h2 class="sr-only">Available Positions</h2>
+        </section>
+
+        <!-- Employer Dashboard -->
+        <section class="dashboard" id="employer-dashboard" aria-label="Employer dashboard">
+            <h2 style="text-align: center; font-size: 2.5rem; color: var(--primary-green); margin-bottom: 2rem;">
+                Employer Dashboard
+            </h2>
+
+            <div class="kanban-board">
+                <div class="kanban-column">
+                    <div class="kanban-header">📋 New Applications</div>
+                    <div class="kanban-card" draggable="true">
+                        <h4>Sarah Chen</h4>
+                        <p>Solar Engineer Position</p>
+                        <small>Applied 2 hours ago</small>
+                    </div>
+                    <div class="kanban-card" draggable="true">
+                        <h4>Mike Rodriguez</h4>
+                        <p>Sustainability Analyst</p>
+                        <small>Applied 5 hours ago</small>
+                    </div>
+                </div>
+
+                <div class="kanban-column">
+                    <div class="kanban-header">📞 In Review</div>
+                    <div class="kanban-card" draggable="true">
+                        <h4>Emma Thompson</h4>
+                        <p>Green Building Architect</p>
+                        <small>Under review for 2 days</small>
+                    </div>
+                </div>
+
+                <div class="kanban-column">
+                    <div class="kanban-header">🎯 Interviewed</div>
+                    <div class="kanban-card" draggable="true">
+                        <h4>David Park</h4>
+                        <p>Environmental Data Scientist</p>
+                        <small>Interviewed yesterday</small>
+                    </div>
+                </div>
+
+                <div class="kanban-column">
+                    <div class="kanban-header">✅ Hired</div>
+                    <div class="kanban-card" draggable="true">
+                        <h4>Lisa Wang</h4>
+                        <p>Renewable Energy Manager</p>
+                        <small>Hired last week</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Job Details Modal -->
+    <div class="modal" id="job-modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div id="modal-body">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="chatbot" role="button" aria-label="Open AI assistant" tabindex="0">
+        <span style="font-size: 1.5rem;">🤖</span>
+    </div>
+
+    <div class="chatbot-window" id="chatbot-window" role="dialog" aria-labelledby="chatbot-title" aria-hidden="true">
+        <div class="chatbot-header" id="chatbot-title">
+            <span>🌱 EcoBot Assistant</span>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages" aria-live="polite">
+            <div style="padding: 1rem; background: #f0f8ff; border-radius: 10px; margin-bottom: 1rem;">
+                Hi! I'm EcoBot, your sustainable career assistant. I can help you find green jobs, provide eco-tips, and
+                answer questions about sustainable careers. What can I help you with today?
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" placeholder="Ask me about green jobs..." aria-label="Chat message input"
+                id="chatbot-input">
+            <button
+                style="padding: 0.5rem 1rem; background: var(--bright-green); color: white; border: none; border-radius: 10px; cursor: pointer;"
+                aria-label="Send message">Send</button>
+        </div>
+    </div>
+
+
+    <!-- Link JS file before closing body tag -->
+    <script src="script.js"></script>
+</body>
+
+</html>
