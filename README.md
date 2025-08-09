@@ -1,5 +1,7 @@
 # EcoJobsDev
 
+Live - https://somensh.github.io/EcoJobsDev
+
 [![Build Status](https://img.shields.io/github/actions/workflow/status/Somensh/EcoJobsDev/main.yml?branch=main)]()
 
 Eco Job Website
